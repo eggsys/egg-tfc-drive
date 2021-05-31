@@ -1,4 +1,10 @@
 terraform {
+  backend "remote" {
+    organization = "sysdev"
+    workspaces {
+      name = "egg-tfc-drive"
+    }
+  }
 
   required_providers {
     aws = {
