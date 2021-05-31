@@ -11,3 +11,12 @@ variable "db_write_capacity" {
   default     = "1"
   
 }
+
+
+
+variable "db_read_capacity" {
+  description = "Value of the db_read"
+  type        = string
+  default     = "2"
+  
+}
