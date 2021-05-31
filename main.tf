@@ -28,5 +28,6 @@ resource "aws_instance" "app_server" {
 
   tags = {
     Name = var.instance_name
+    db_write = var.db_write_capacity
   }
 }
